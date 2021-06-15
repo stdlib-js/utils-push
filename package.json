@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-push",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Add one or more elements to the end of a collection.",
   "license": "Apache-2.0",
   "author": {
