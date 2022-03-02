@@ -68,7 +68,7 @@ jobs:
       - name: Checkout branch with UMD build
         uses: actions/checkout@v2
         with:
-          branch: umd
+          ref: umd
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -76,6 +76,29 @@ jobs:
       - name: Try loading UMD module
         run: |
           node --eval "require( './bundle.js' )" || exit $?
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+  test-esm:
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    steps:
+      - name: Checkout branch with ESM build
+        uses: actions/checkout@v2
+        with:
+          ref: esm
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17
+      - name: Try loading ESM
+        run: |
+          node --experimental-network-imports --eval "import( './index.mjs' )" || exit $?
       - name: Send status to Slack channel in case of failure
         uses: act10ns/slack@v1
         with:
