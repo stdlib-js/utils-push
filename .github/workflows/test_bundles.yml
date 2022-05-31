@@ -67,8 +67,8 @@ jobs:
       # Install playwright for headless browser testing:
       - name: 'Install playwright'
         run: |
-          npm install -g playwright
-          playwright install --with-deps chromium
+          npm install playwright
+          npx playwright install --with-deps chromium
 
       # Try loading the UMD browser bundle with playwright:
       - name: 'Try loading UMD browser bundle with playwright'
