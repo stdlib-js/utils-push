@@ -81,7 +81,7 @@ jobs:
               page.on( 'pageerror', exception => {\
                 throw new Error( exception.message );\
               });\
-              await page.addScriptTag({ path: './bundle.js' });\
+              await page.addScriptTag({ path: './browser.js' });\
               await browser.close();\
             })();"
           node --eval "$PLAYWRIGHT_SCRIPT" || exit $?
