@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.push;
+})();
 })();
 </script>
 ```
@@ -143,6 +145,7 @@ bool = ( out.buffer === arr.buffer );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var arr;
 var i;
@@ -153,6 +156,7 @@ for ( i = 0; i < 100; i++ ) {
 }
 console.log( arr );
 
+})();
 })();
 </script>
 </body>
@@ -268,11 +272,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/pop]: https://github.com/stdlib-js/utils-pop/tree/umd
+[@stdlib/utils/pop]: https://github.com/stdlib-js/utils-pop/tree/umd/tree/umd
 
-[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift/tree/umd
+[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift/tree/umd/tree/umd
 
-[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift/tree/umd
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
