@@ -161,9 +161,9 @@ console.log( arr );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/pop`][@stdlib/utils/pop]</span><span class="delimiter">: </span><span class="description">remove and return the last element of a collection.</span>
--   <span class="package-name">[`@stdlib/utils/shift`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
--   <span class="package-name">[`@stdlib/utils/unshift`][@stdlib/utils/unshift]</span><span class="delimiter">: </span><span class="description">add one or more elements to the beginning of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils-pop`][@stdlib/utils/pop]</span><span class="delimiter">: </span><span class="description">remove and return the last element of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils-shift`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils-unshift`][@stdlib/utils/unshift]</span><span class="delimiter">: </span><span class="description">add one or more elements to the beginning of a collection.</span>
 
 </section>
 
