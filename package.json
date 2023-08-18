@@ -42,7 +42,7 @@
     "@stdlib/assert-is-integer": "^0.0.8",
     "@stdlib/assert-is-typed-array-like": "^0.0.8",
     "@stdlib/math-base-special-ceil2": "^0.0.6",
-    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2",
     "@stdlib/types": "^0.0.14"
   },
   "devDependencies": {
