@@ -18,6 +18,17 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # push
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
@@ -34,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-push
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@esm/index.mjs';
+var push = require( '@stdlib/utils-push' );
 ```
 
 #### push( collection, ...items )
@@ -61,8 +88,8 @@ var bool = ( out === arr );
 In contrast to [`Array.prototype.push`][mdn-array-push], the function returns the extended collection, rather than the collection length. For [typed arrays][mdn-typed-array], the returned value is a new [typed array][mdn-typed-array] view whose underlying [`ArrayBuffer`][mdn-arraybuffer] may **not** equal the underlying [`ArrayBuffer`][mdn-arraybuffer] for the input `collection`.
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var Float64Array = require( '@stdlib/array-float64' );
 
 var buf = new ArrayBuffer( 3*8 ); // 8 bytes per double
 
@@ -111,14 +138,9 @@ bool = ( out.buffer === arr.buffer );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@esm/index.mjs';
+```javascript
+var Float64Array = require( '@stdlib/array-float64' );
+var push = require( '@stdlib/utils-push' );
 
 var arr;
 var i;
@@ -128,10 +150,6 @@ for ( i = 0; i < 100; i++ ) {
     arr = push( arr, i );
 }
 console.log( arr );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -171,7 +189,7 @@ console.log( arr );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -201,8 +219,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-push.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-push
 
-[test-image]: https://github.com/stdlib-js/utils-push/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/utils-push/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/utils-push/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/utils-push/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-push/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-push?branch=main
@@ -243,11 +261,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/pop]: https://github.com/stdlib-js/utils-pop/tree/esm
+[@stdlib/utils/pop]: https://github.com/stdlib-js/utils-pop
 
-[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift/tree/esm
+[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift
 
-[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift/tree/esm
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift
 
 <!-- </related-links> -->
 
