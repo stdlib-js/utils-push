@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var MAX_INT32 = require( '@stdlib/constants-int32-max' );
 var MAX_UINT32 = require( '@stdlib/constants-uint32-max' );
 var MAX_INT16 = require( '@stdlib/constants-int16-max' );
