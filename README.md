@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-push/tags). For example,
+
+```javascript
 import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@v0.2.1-deno/mod.js';
 ```
 
@@ -124,7 +129,7 @@ bool = ( out.buffer === arr.buffer );
 
 ```javascript
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@v0.2.1-deno/mod.js';
+import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@deno/mod.js';
 
 var arr;
 var i;
