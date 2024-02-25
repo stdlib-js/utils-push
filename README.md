@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@esm/index.mjs';
+import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@v0.2.1-esm/index.mjs';
 ```
 
 #### push( collection, ...items )
@@ -129,7 +129,7 @@ bool = ( out.buffer === arr.buffer );
 <script type="module">
 
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@esm/index.mjs';
+import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@v0.2.1-esm/index.mjs';
 
 var arr;
 var i;
