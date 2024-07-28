@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@deno/mod.js';
+import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@v0.2.2-deno/mod.js';
 ```
 
 #### push( collection, ...items )
@@ -124,7 +124,7 @@ bool = ( out.buffer === arr.buffer );
 
 ```javascript
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@deno/mod.js';
+import push from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-push@v0.2.2-deno/mod.js';
 
 var arr;
 var i;
