@@ -75,7 +75,7 @@ var push = require( '@stdlib/utils-push' );
 
 #### push( collection, ...items )
 
-Adds one or more elements to the end of a `collection`. A `collection` may be either an [`Array`][mdn-array], [`Typed Array`][mdn-typed-array], or an array-like [`Object`][mdn-object] (i.e., an [`Object`][mdn-object] having a valid writable `length` property). 
+Adds one or more elements to the end of a `collection`. A `collection` may be either an [`Array`][mdn-array], [`Typed Array`][mdn-typed-array], or an array-like [`Object`][mdn-object] (i.e., an [`Object`][mdn-object] having a valid writable `length` property).
 
 ```javascript
 var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
@@ -208,7 +208,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
