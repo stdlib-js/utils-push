@@ -43,7 +43,7 @@
     "@stdlib/assert-is-typed-array-like": "^0.2.3",
     "@stdlib/math-base-special-ceil2": "^0.3.1",
     "@stdlib/string-format": "^0.2.3",
-    "@stdlib/types": "^0.4.3",
+    "@stdlib/types": "^0.5.1",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
